@@ -126,6 +126,7 @@ p {
   margin: 10px 0;
 }
 
+
 /* ---------- Horizontal Divider ---------- */
 
 hr {
@@ -364,6 +365,101 @@ li {
 }
 
 
+/* ---------- Home Page ---------- */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.info-card,
+.community-card {
+  padding: 28px;
+
+  background: rgba(117, 105, 88, 0.07);
+
+  border: 1px solid #d8d0c3;
+  border-radius: 8px;
+}
+
+.info-card {
+  text-align: center;
+}
+
+.info-card h2,
+.community-card h2 {
+  margin-top: 0;
+}
+
+.home-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+
+  margin-top: 25px;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 22px;
+
+  background: rgba(117, 105, 88, 0.07);
+
+  border: 1px solid #d8d0c3;
+  border-radius: 8px;
+
+  color: #4a443b;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-card:hover {
+  background: rgba(117, 105, 88, 0.12);
+  border-color: #bdb3a3;
+
+  color: #4a443b;
+
+  transform: translateY(-2px);
+}
+
+.home-card strong {
+  margin-bottom: 5px;
+
+  color: #65705b;
+
+  font-size: 1.08rem;
+  font-weight: normal;
+}
+
+.home-card span {
+  color: #756f66;
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.community-card {
+  max-width: 760px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -438,9 +534,15 @@ li {
     margin: 32px 0;
   }
 
+
+  /* Commands */
+
   .command {
     padding: 16px 0;
   }
+
+
+  /* Schedule */
 
   .game-card {
     padding: 16px;
@@ -457,6 +559,23 @@ li {
 
     gap: 3px;
   }
+
+
+  /* Home Page */
+
+  .info-grid,
+  .home-links {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card,
+  .community-card,
+  .home-card {
+    padding: 18px;
+  }
+
+
+  /* Footer */
 
   .footer-socials {
     flex-direction: column;
