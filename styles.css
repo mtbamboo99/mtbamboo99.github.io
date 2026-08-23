@@ -497,23 +497,18 @@ li {
 }
 
 
-/* Stronger green — intentionally distinct from game-card background */
-
 .stream-yes {
-  background: #b7d3b0;
-  color: #28452d;
+  background: #526b52;
+  color: #ffffff;
 
-  border: 1px solid #8fb48a;
+  border: 1px solid #526b52;
 }
 
-
-/* Warm amber for uncertain streaming plans */
-
 .stream-unsure {
-  background: #ead8ae;
-  color: #705522;
+  background: #9a7138;
+  color: #ffffff;
 
-  border: 1px solid #d7bf87;
+  border: 1px solid #9a7138;
 }
 
 .game-list-note {
