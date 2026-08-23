@@ -17,12 +17,12 @@ body {
   margin: 0;
   padding: 0;
 
-  background: #f5f1e8;
-  color: #4a443b;
+  background: #f4f5ef;
+  color: #40463f;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.72;
 }
 
 
@@ -39,17 +39,16 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 
-/* Legacy text site-name styling.
-   Kept in case any older page still uses it. */
+/* Legacy text site-name styling */
 
 .site-name {
   margin: 0;
 
-  color: #51483d;
+  color: #566055;
 
   font-size: 2rem;
   font-weight: normal;
@@ -61,7 +60,6 @@ header {
 
 .site-logo-link {
   display: inline-block;
-
   text-decoration: none;
 }
 
@@ -76,13 +74,36 @@ header {
 }
 
 
+/* Page label beneath logo */
+
 .page-title {
-  margin: 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  color: #756958;
+  gap: 14px;
 
-  font-size: 1.15rem;
+  width: fit-content;
+
+  margin: 18px auto 0;
+
+  color: #5f6b5d;
+
+  font-size: 1rem;
   font-weight: normal;
+  letter-spacing: 0.055em;
+}
+
+.page-title::before,
+.page-title::after {
+  content: "";
+
+  display: block;
+
+  width: 42px;
+  height: 1px;
+
+  background: #adb6aa;
 }
 
 
@@ -95,18 +116,18 @@ nav {
 
   gap: 8px 22px;
 
-  margin-top: 25px;
-  padding: 14px 0;
+  margin-top: 23px;
+  padding: 13px 0;
 
-  border-top: 1px solid #cfc6b7;
-  border-bottom: 1px solid #cfc6b7;
+  border-top: 1px solid #d1d7cd;
+  border-bottom: 1px solid #d1d7cd;
 }
 
 nav a {
-  color: #6f6252;
+  color: #626d60;
 
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 
   transition:
     color 0.2s ease,
@@ -114,7 +135,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #65705b;
+  color: #465244;
 }
 
 
@@ -125,7 +146,7 @@ main {
 }
 
 section {
-  margin: 45px 0;
+  margin: 44px 0;
 }
 
 h1,
@@ -137,17 +158,29 @@ h3 {
 h2 {
   margin: 0 0 18px;
 
-  color: #65705b;
+  color: #5b6858;
 
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 h3 {
-  color: #756958;
+  color: #677363;
 }
 
 p {
   margin: 10px 0;
+}
+
+
+/* Long-form About copy */
+
+.about-section {
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.about-section p {
+  margin: 11px 0;
 }
 
 
@@ -157,18 +190,18 @@ hr {
   margin: 32px 0;
 
   border: 0;
-  border-top: 1px solid #d8d0c3;
+  border-top: 1px solid #d1d7cd;
 }
 
 
 /* ---------- Links ---------- */
 
 a {
-  color: #65705b;
+  color: #61705e;
 }
 
 a:hover {
-  color: #4f5947;
+  color: #465244;
 }
 
 
@@ -213,7 +246,7 @@ a:hover {
 .command {
   padding: 20px 0;
 
-  border-bottom: 1px solid #d8d0c3;
+  border-bottom: 1px solid #d1d7cd;
 }
 
 .command:last-child {
@@ -223,18 +256,18 @@ a:hover {
 .command-name {
   margin-bottom: 3px;
 
-  color: #65705b;
+  color: #5b6858;
 
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   font-weight: bold;
 }
 
 .note {
   margin-top: 4px;
 
-  color: #80776b;
+  color: #737c70;
 
-  font-size: 0.9rem;
+  font-size: 0.86rem;
 }
 
 
@@ -243,8 +276,8 @@ a:hover {
 code {
   padding: 2px 5px;
 
-  background: #ebe5da;
-  color: #65705b;
+  background: #e9ece5;
+  color: #566055;
 
   border-radius: 3px;
 
@@ -273,22 +306,25 @@ li {
   display: inline-block;
 
   margin-top: 12px;
-  padding: 9px 18px;
+  padding: 8px 17px;
 
-  border: 1px solid #8a7b62;
+  border: 1px solid #7b8877;
   border-radius: 3px;
 
-  color: #655a49;
+  color: #566254;
 
   text-decoration: none;
+  font-size: 0.93rem;
 
   transition:
     background 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .button:hover {
-  background: #8a7b62;
+  background: #667363;
+  border-color: #667363;
   color: #ffffff;
 }
 
@@ -296,7 +332,7 @@ li {
 /* ---------- Schedule / Game Lists ---------- */
 
 .schedule-time {
-  font-size: 1.08rem;
+  font-size: 1.03rem;
   line-height: 1.8;
 }
 
@@ -312,9 +348,9 @@ li {
 .game-card {
   padding: 18px 20px;
 
-  background: rgba(117, 105, 88, 0.07);
+  background: #eef0e9;
 
-  border: 1px solid #d8d0c3;
+  border: 1px solid #d1d7cd;
   border-radius: 6px;
 }
 
@@ -329,16 +365,16 @@ li {
 .game-card h3 {
   margin: 0;
 
-  font-size: 1.05rem;
+  font-size: 1.02rem;
 }
 
 .game-card h3 a {
-  color: #65705b;
+  color: #5b6858;
   text-decoration: none;
 }
 
 .game-card h3 a:hover {
-  color: #4f5947;
+  color: #465244;
   text-decoration: underline;
 }
 
@@ -350,15 +386,15 @@ li {
 
   margin-top: 10px;
 
-  color: #756f66;
+  color: #6e786c;
 
-  font-size: 0.9rem;
+  font-size: 0.86rem;
 }
 
 .game-meta strong {
   margin-right: 8px;
 
-  color: #61594f;
+  color: #596356;
 
   font-weight: normal;
 }
@@ -370,18 +406,18 @@ li {
 
   border-radius: 999px;
 
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   white-space: nowrap;
 }
 
 .stream-yes {
-  background: #e5ebe0;
-  color: #57644f;
+  background: #dde6da;
+  color: #4f614c;
 }
 
 .stream-unsure {
-  background: #ece5d8;
-  color: #776953;
+  background: #e4e8df;
+  color: #667063;
 }
 
 .game-list-note {
@@ -398,14 +434,20 @@ li {
   gap: 18px;
 }
 
+
+/* Information / community cards */
+
 .info-card,
 .community-card {
-  padding: 28px;
+  padding: 26px;
 
-  background: rgba(117, 105, 88, 0.07);
+  background: #eef0e9;
 
-  border: 1px solid #d8d0c3;
+  border: 1px solid #d1d7cd;
   border-radius: 8px;
+
+  font-size: 0.91rem;
+  line-height: 1.65;
 }
 
 .info-card {
@@ -415,7 +457,24 @@ li {
 .info-card h2,
 .community-card h2 {
   margin-top: 0;
+  margin-bottom: 16px;
+
+  color: #586756;
+
+  font-size: 1.25rem;
 }
+
+.info-card .note {
+  margin-top: 17px;
+
+  color: #778074;
+
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+
+/* Explore cards */
 
 .home-links {
   display: grid;
@@ -432,14 +491,14 @@ li {
 
   gap: 5px;
 
-  padding: 22px;
+  padding: 20px;
 
-  background: rgba(117, 105, 88, 0.07);
+  background: #f0f2ec;
 
-  border: 1px solid #d8d0c3;
+  border: 1px solid #d1d7cd;
   border-radius: 8px;
 
-  color: #4a443b;
+  color: #40463f;
 
   text-decoration: none;
 
@@ -450,10 +509,10 @@ li {
 }
 
 .home-card:hover {
-  background: rgba(117, 105, 88, 0.12);
-  border-color: #bdb3a3;
+  background: #e8ece5;
+  border-color: #aeb9ab;
 
-  color: #4a443b;
+  color: #40463f;
 
   transform: translateY(-2px);
 }
@@ -461,18 +520,21 @@ li {
 .home-card strong {
   margin-bottom: 5px;
 
-  color: #65705b;
+  color: #586756;
 
-  font-size: 1.08rem;
+  font-size: 1.02rem;
   font-weight: normal;
 }
 
 .home-card span {
-  color: #756f66;
+  color: #687366;
 
-  font-size: 0.88rem;
+  font-size: 0.83rem;
   line-height: 1.5;
 }
+
+
+/* Community card */
 
 .community-card {
   max-width: 760px;
@@ -490,7 +552,7 @@ li {
   margin-top: 70px;
   padding-top: 24px;
 
-  border-top: 1px solid #cfc6b7;
+  border-top: 1px solid #d1d7cd;
 
   text-align: center;
 }
@@ -504,14 +566,14 @@ li {
 }
 
 .footer-socials a {
-  color: #65705b;
+  color: #61705e;
 
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
 }
 
 .footer-socials a:hover {
-  color: #4f5947;
+  color: #465244;
   text-decoration: underline;
 }
 
@@ -527,18 +589,17 @@ li {
 
   margin: 24px auto 0;
 
-  opacity: 0.8;
+  opacity: 0.78;
 }
 
 
-/* Legacy footer text.
-   Kept in case an older page still uses it. */
+/* Legacy footer text */
 
 .footer-name {
   margin-top: 18px;
   margin-bottom: 0;
 
-  color: #8a8175;
+  color: #758071;
 
   font-size: 0.82rem;
 }
@@ -549,7 +610,7 @@ li {
 @media (max-width: 600px) {
 
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .page {
@@ -571,8 +632,15 @@ li {
   }
 
   .page-title {
-    margin-top: 13px;
-    font-size: 1.05rem;
+    margin-top: 15px;
+
+    font-size: 0.94rem;
+    letter-spacing: 0.035em;
+  }
+
+  .page-title::before,
+  .page-title::after {
+    width: 25px;
   }
 
   nav {
@@ -580,11 +648,18 @@ li {
   }
 
   nav a {
-    font-size: 0.9rem;
+    font-size: 0.86rem;
   }
 
   section {
     margin: 32px 0;
+  }
+
+
+  /* About */
+
+  .about-section {
+    font-size: 0.96rem;
   }
 
 
