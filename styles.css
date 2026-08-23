@@ -291,7 +291,7 @@ a:hover {
 .command {
   padding: 20px 0;
 
-  border-bottom: 1px solid #d1d7cd;
+  border-bottom: 1px dashed #ccd3c9;
 }
 
 .command:last-child {
@@ -299,12 +299,25 @@ a:hover {
 }
 
 .command-name {
-  margin-bottom: 3px;
+  display: inline-block;
 
-  color: #586756;
+  margin-bottom: 8px;
+  padding: 4px 8px;
 
-  font-size: 1.03rem;
+  background: #e8ece5;
+
+  border: 1px solid #c8d0c4;
+  border-radius: 4px;
+
+  color: #4f5d4d;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 0.95rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .note {
@@ -376,6 +389,23 @@ li {
 }
 
 
+/* ---------- Blue Cards ---------- */
+
+/*
+   Reusable blue-card treatment.
+
+   Add class="blue-card" to any blue informational card.
+   Buttons inside blue cards receive a blue hover instead
+   of the site's normal green hover.
+*/
+
+.blue-card .button:hover {
+  background: #667d82;
+  border-color: #667d82;
+  color: #ffffff;
+}
+
+
 /* ---------- Schedule / Game Lists ---------- */
 
 .schedule-time {
@@ -401,7 +431,10 @@ li {
   border-radius: 6px;
 }
 
-/* Blue-gray cards for games currently being played outside the regular schedule */
+
+/* Blue-gray cards for games currently being played
+   outside the regular schedule */
+
 .also-playing .game-card {
   background: #e2e9ea;
   border-color: #c3ced0;
@@ -463,12 +496,18 @@ li {
   white-space: nowrap;
 }
 
-.stream-yes {
-  background: #c9ddc5;
-  color: #36533a;
 
-  border: 1px solid #aec9aa;
+/* Stronger green — intentionally distinct from game-card background */
+
+.stream-yes {
+  background: #b7d3b0;
+  color: #28452d;
+
+  border: 1px solid #8fb48a;
 }
+
+
+/* Warm amber for uncertain streaming plans */
 
 .stream-unsure {
   background: #ead8ae;
@@ -598,7 +637,7 @@ li {
 }
 
 
-/* ---------- Community Card ---------- */
+/* ---------- Community / Blue Information Cards ---------- */
 
 .community-card {
   max-width: 760px;
@@ -630,6 +669,20 @@ li {
   color: #526467;
 
   font-size: 1.29rem;
+}
+
+
+/*
+   Community cards are blue cards by design,
+   so retain blue button behavior even if the HTML
+   does not explicitly include the blue-card class.
+*/
+
+.community-card .button:hover,
+.blue-card .button:hover {
+  background: #667d82;
+  border-color: #667d82;
+  color: #ffffff;
 }
 
 
