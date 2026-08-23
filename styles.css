@@ -401,6 +401,12 @@ li {
   border-radius: 6px;
 }
 
+/* Blue-gray cards for games currently being played outside the regular schedule */
+.also-playing .game-card {
+  background: #e2e9ea;
+  border-color: #c3ced0;
+}
+
 .game-card-header {
   display: flex;
   align-items: flex-start;
@@ -458,13 +464,17 @@ li {
 }
 
 .stream-yes {
-  background: #dce6d9;
-  color: #4f614c;
+  background: #c9ddc5;
+  color: #36533a;
+
+  border: 1px solid #aec9aa;
 }
 
 .stream-unsure {
-  background: #e2e6df;
-  color: #667063;
+  background: #ead8ae;
+  color: #705522;
+
+  border: 1px solid #d7bf87;
 }
 
 .game-list-note {
