@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=ZCOOL+XiaoWei&display=swap');
+
+
 /* =========================================
    山竹99 mtbamboo99 — Shared Website Styles
    ========================================= */
@@ -20,9 +23,19 @@ body {
   background: #f4f5ef;
   color: #40463f;
 
-  font-family: Georgia, "Times New Roman", serif;
+  /*
+     Source Sans 3 handles English.
+     Chinese characters automatically fall back to Noto Sans SC.
+  */
+  font-family:
+    "Source Sans 3",
+    "Noto Sans SC",
+    Arial,
+    Helvetica,
+    sans-serif;
+
   font-size: 16px;
-  line-height: 1.72;
+  line-height: 1.68;
 }
 
 
@@ -50,8 +63,14 @@ header {
 
   color: #566055;
 
+  font-family:
+    "EB Garamond",
+    "ZCOOL XiaoWei",
+    Georgia,
+    serif;
+
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 700;
   letter-spacing: 0.04em;
 }
 
@@ -81,18 +100,28 @@ header {
   align-items: center;
   justify-content: center;
 
-  gap: 14px;
+  gap: 15px;
 
   width: fit-content;
 
   margin: 18px auto 0;
 
-  color: #5f6b5d;
+  color: #566354;
 
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.07em;
+  /*
+     English → EB Garamond
+     Chinese → ZCOOL XiaoWei fallback
+  */
+  font-family:
+    "EB Garamond",
+    "ZCOOL XiaoWei",
+    "Noto Sans SC",
+    serif;
+
+  font-size: 1.28rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
 }
 
 .page-title::before,
@@ -101,10 +130,10 @@ header {
 
   display: block;
 
-  width: 42px;
+  width: 44px;
   height: 1px;
 
-  background: #adb6aa;
+  background: #a9b4a6;
 }
 
 
@@ -129,6 +158,7 @@ nav a {
 
   text-decoration: none;
   font-size: 0.92rem;
+  font-weight: 500;
 
   transition:
     color 0.2s ease,
@@ -150,22 +180,36 @@ section {
   margin: 44px 0;
 }
 
+
+/*
+   Display fonts:
+   English → EB Garamond
+   Chinese → ZCOOL XiaoWei
+*/
+
 h1,
 h2,
 h3 {
-  font-weight: normal;
+  font-family:
+    "EB Garamond",
+    "ZCOOL XiaoWei",
+    "Noto Sans SC",
+    serif;
+
+  font-weight: 600;
 }
 
 h2 {
   margin: 0 0 18px;
 
-  color: #5b6858;
+  color: #586756;
 
-  font-size: 1.35rem;
+  font-size: 1.42rem;
+  line-height: 1.35;
 }
 
 h3 {
-  color: #677363;
+  color: #657262;
 }
 
 p {
@@ -176,8 +220,8 @@ p {
 /* Long-form About copy */
 
 .about-section {
-  font-size: 0.94rem;
-  line-height: 1.75;
+  font-size: 0.93rem;
+  line-height: 1.72;
 }
 
 .about-section p {
@@ -257,10 +301,10 @@ a:hover {
 .command-name {
   margin-bottom: 3px;
 
-  color: #5b6858;
+  color: #586756;
 
-  font-size: 1.05rem;
-  font-weight: bold;
+  font-size: 1.03rem;
+  font-weight: 700;
 }
 
 .note {
@@ -268,7 +312,7 @@ a:hover {
 
   color: #737c70;
 
-  font-size: 0.86rem;
+  font-size: 0.85rem;
 }
 
 
@@ -277,7 +321,7 @@ a:hover {
 code {
   padding: 2px 5px;
 
-  background: #e9ece5;
+  background: #e8ece5;
   color: #566055;
 
   border-radius: 3px;
@@ -309,13 +353,15 @@ li {
   margin-top: 12px;
   padding: 8px 17px;
 
-  border: 1px solid #7b8877;
+  border: 1px solid #798777;
   border-radius: 3px;
 
-  color: #566254;
+  color: #536151;
 
   text-decoration: none;
-  font-size: 0.93rem;
+
+  font-size: 0.92rem;
+  font-weight: 500;
 
   transition:
     background 0.2s ease,
@@ -333,8 +379,8 @@ li {
 /* ---------- Schedule / Game Lists ---------- */
 
 .schedule-time {
-  font-size: 1.03rem;
-  line-height: 1.8;
+  font-size: 1.01rem;
+  line-height: 1.75;
 }
 
 .game-list {
@@ -349,9 +395,9 @@ li {
 .game-card {
   padding: 18px 20px;
 
-  background: #eef0e9;
+  background: #e8ede5;
 
-  border: 1px solid #d1d7cd;
+  border: 1px solid #cbd4c7;
   border-radius: 6px;
 }
 
@@ -366,11 +412,11 @@ li {
 .game-card h3 {
   margin: 0;
 
-  font-size: 1.02rem;
+  font-size: 1.06rem;
 }
 
 .game-card h3 a {
-  color: #5b6858;
+  color: #586756;
   text-decoration: none;
 }
 
@@ -389,7 +435,7 @@ li {
 
   color: #6e786c;
 
-  font-size: 0.86rem;
+  font-size: 0.85rem;
 }
 
 .game-meta strong {
@@ -397,7 +443,7 @@ li {
 
   color: #596356;
 
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .stream-status {
@@ -407,17 +453,17 @@ li {
 
   border-radius: 999px;
 
-  font-size: 0.76rem;
+  font-size: 0.75rem;
   white-space: nowrap;
 }
 
 .stream-yes {
-  background: #dde6da;
+  background: #dce6d9;
   color: #4f614c;
 }
 
 .stream-unsure {
-  background: #e4e8df;
+  background: #e2e6df;
   color: #667063;
 }
 
@@ -436,10 +482,9 @@ li {
 }
 
 
-/* Information / community cards */
+/* ---------- Information Cards ---------- */
 
-.info-card,
-.community-card {
+.info-card {
   padding: 26px;
 
   background: #e3e8df;
@@ -447,35 +492,32 @@ li {
   border: 1px solid #c5cec1;
   border-radius: 8px;
 
-  font-size: 0.91rem;
-  line-height: 1.65;
-}
+  font-size: 0.89rem;
+  line-height: 1.62;
 
-.info-card {
   text-align: center;
 }
 
-.info-card h2,
-.community-card h2 {
+.info-card h2 {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
-  color: #586756;
+  color: #536351;
 
-  font-size: 1.25rem;
+  font-size: 1.29rem;
 }
 
 .info-card .note {
   margin-top: 17px;
 
-  color: #778074;
+  color: #737d71;
 
-  font-size: 0.82rem;
-  line-height: 1.55;
+  font-size: 0.81rem;
+  line-height: 1.52;
 }
 
 
-/* Explore cards */
+/* ---------- Explore Cards ---------- */
 
 .home-links {
   display: grid;
@@ -494,9 +536,14 @@ li {
 
   padding: 20px;
 
-  background: #eeeae1;
+  /*
+     Muted lavender-gray:
+     distinct from the green info cards
+     without becoming bright or saturated.
+  */
+  background: #e8e6ec;
 
-  border: 1px solid #d8d1c5;
+  border: 1px solid #cbc7d2;
   border-radius: 8px;
 
   color: #40463f;
@@ -510,8 +557,8 @@ li {
 }
 
 .home-card:hover {
-  background: #e7e1d6;
-  border-color: #c8bfae;
+  background: #dfdce5;
+  border-color: #bcb6c6;
 
   color: #40463f;
 
@@ -521,21 +568,27 @@ li {
 .home-card strong {
   margin-bottom: 5px;
 
-  color: #586756;
+  color: #5b625d;
 
-  font-size: 1.02rem;
-  font-weight: normal;
+  font-family:
+    "EB Garamond",
+    "ZCOOL XiaoWei",
+    "Noto Sans SC",
+    serif;
+
+  font-size: 1.08rem;
+  font-weight: 600;
 }
 
 .home-card span {
-  color: #687366;
+  color: #686b68;
 
-  font-size: 0.83rem;
-  line-height: 1.5;
+  font-size: 0.82rem;
+  line-height: 1.47;
 }
 
 
-/* Community card */
+/* ---------- Community Card ---------- */
 
 .community-card {
   max-width: 760px;
@@ -543,11 +596,32 @@ li {
   margin-left: auto;
   margin-right: auto;
 
-  background: #dce4d9;
-  border-color: #bcc8b9;
+  padding: 26px;
+
+  /*
+     Muted blue-gray:
+     gives community/CTA content its own identity.
+  */
+  background: #dfe7e8;
+
+  border: 1px solid #bdc9ca;
+  border-radius: 8px;
+
+  font-size: 0.89rem;
+  line-height: 1.62;
 
   text-align: center;
 }
+
+.community-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  color: #526467;
+
+  font-size: 1.29rem;
+}
+
 
 /* ---------- Footer ---------- */
 
@@ -572,7 +646,9 @@ li {
   color: #61705e;
 
   text-decoration: none;
-  font-size: 0.86rem;
+
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .footer-socials a:hover {
@@ -637,13 +713,15 @@ li {
   .page-title {
     margin-top: 15px;
 
-    font-size: 0.94rem;
+    gap: 10px;
+
+    font-size: 1.08rem;
     letter-spacing: 0.035em;
   }
 
   .page-title::before,
   .page-title::after {
-    width: 25px;
+    width: 24px;
   }
 
   nav {
@@ -651,7 +729,7 @@ li {
   }
 
   nav a {
-    font-size: 0.86rem;
+    font-size: 0.85rem;
   }
 
   section {
@@ -662,7 +740,7 @@ li {
   /* About */
 
   .about-section {
-    font-size: 0.96rem;
+    font-size: 0.94rem;
   }
 
 
