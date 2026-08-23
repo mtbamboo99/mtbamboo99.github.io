@@ -1,5 +1,5 @@
 /* =========================================
-   山竹 mtbamboo — Shared Website Styles
+   山竹99 mtbamboo99 — Shared Website Styles
    ========================================= */
 
 
@@ -42,6 +42,10 @@ header {
   margin-bottom: 50px;
 }
 
+
+/* Legacy text site-name styling.
+   Kept in case any older page still uses it. */
+
 .site-name {
   margin: 0;
 
@@ -52,8 +56,28 @@ header {
   letter-spacing: 0.04em;
 }
 
+
+/* Main commissioned logo */
+
+.site-logo-link {
+  display: inline-block;
+
+  text-decoration: none;
+}
+
+.site-logo {
+  display: block;
+
+  width: 280px;
+  max-width: 75vw;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+
 .page-title {
-  margin: 8px 0 0;
+  margin: 16px 0 0;
 
   color: #756958;
 
@@ -491,6 +515,25 @@ li {
   text-decoration: underline;
 }
 
+
+/* Commissioned footer logo */
+
+.footer-logo {
+  display: block;
+
+  width: 165px;
+  max-width: 55vw;
+  height: auto;
+
+  margin: 24px auto 0;
+
+  opacity: 0.8;
+}
+
+
+/* Legacy footer text.
+   Kept in case an older page still uses it. */
+
 .footer-name {
   margin-top: 18px;
   margin-bottom: 0;
@@ -520,6 +563,16 @@ li {
 
   .site-name {
     font-size: 1.7rem;
+  }
+
+  .site-logo {
+    width: 230px;
+    max-width: 78vw;
+  }
+
+  .page-title {
+    margin-top: 13px;
+    font-size: 1.05rem;
   }
 
   nav {
@@ -581,6 +634,10 @@ li {
     flex-direction: column;
 
     gap: 7px;
+  }
+
+  .footer-logo {
+    width: 145px;
   }
 
 }
