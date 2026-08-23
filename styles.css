@@ -854,4 +854,17 @@ li {
     width: 145px;
   }
 
+  .asset-notice {
+    max-width: 680px;
+
+    margin: 16px auto 0;
+
+    color: #8a9287;
+
+    font-size: 0.68rem;
+    line-height: 1.55;
+
+    text-align: center;
+}
+
 }
