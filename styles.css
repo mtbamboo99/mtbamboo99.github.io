@@ -413,6 +413,78 @@ li {
   line-height: 1.75;
 }
 
+/* ---------- Weekly Schedule Table ---------- */
+
+.schedule-table-wrapper {
+  margin-top: 24px;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 8px;
+
+  table-layout: fixed;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 16px 14px;
+
+  border: 1px solid #ccd4c9;
+  border-radius: 7px;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.schedule-table thead th {
+  background: transparent;
+
+  border: none;
+
+  color: #657262;
+
+  font-family:
+    "EB Garamond",
+    "ZCOOL XiaoWei",
+    "Noto Sans SC",
+    serif;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.schedule-table thead th:first-child {
+  width: 90px;
+}
+
+.schedule-table tbody th {
+  background: #ecefe9;
+
+  color: #667064;
+
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.schedule-table td {
+  background: #f0f2ed;
+
+  color: #555e53;
+
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.schedule-table td strong {
+  color: #4f5d4d;
+
+  font-size: 1rem;
+}
+
 .game-list {
   display: flex;
   flex-direction: column;
@@ -509,6 +581,27 @@ li {
   color: #ffffff;
 
   border: 1px solid #a27d4c;
+}
+
+.stream-evergreen {
+  background: #dce9da;
+  color: #486348;
+
+  border: 1px solid #b8cbb5;
+}
+
+.stream-takeover {
+  background: #f3dfc8;
+  color: #825728;
+
+  border: 1px solid #dfbd96;
+}
+
+.stream-chill {
+  background: #dce8ee;
+  color: #456773;
+
+  border: 1px solid #b8ccd4;
 }
 
 .game-list-note {
@@ -810,6 +903,14 @@ li {
 
 
   /* Schedule */
+  .schedule-table {
+    min-width: 620px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 13px 10px;
+  }
 
   .game-card {
     padding: 16px;
