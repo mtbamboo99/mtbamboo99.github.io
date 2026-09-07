@@ -417,6 +417,10 @@ li {
 
 .schedule-table-wrapper {
   margin-top: 24px;
+  margin-bottom: 22px;
+  border: 2px solid #b8c4b4;
+  border-radius: 6px;
+
   overflow-x: auto;
 }
 
@@ -424,12 +428,9 @@ li {
   width: 100%;
 
   border-collapse: collapse;
-
   table-layout: fixed;
 
-  border: 2px solid #b8c4b4;
-  border-radius: 6px;
-  overflow: hidden;
+  border: none;
 }
 
 .schedule-table th,
