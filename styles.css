@@ -660,16 +660,16 @@ li {
 /* Event date / timezone banner */
 
 .event-date {
-  display: inline-flex;
-  flex-direction: column;
+  display: inline-grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
 
-  gap: 3px;
+  gap: 18px;
 
-  min-width: 300px;
+  min-width: 560px;
   max-width: 100%;
 
-  padding: 14px 24px;
+  padding: 12px 24px;
 
   background:
     linear-gradient(
@@ -687,29 +687,36 @@ li {
 }
 
 .event-date-label {
-  margin-bottom: 3px;
+  grid-column: 1 / -1;
+
+  margin-bottom: 2px;
 
   color: #8a7655;
 
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.11em;
+
+  text-align: center;
 }
 
 .event-date strong {
-  font-size: 0.98rem;
+  font-size: 0.96rem;
+  text-align: center;
 }
 
 .event-date span {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   letter-spacing: 0.02em;
+
+  text-align: center;
 }
 
 .event-date-divider {
-  width: 40px;
-  height: 1px;
+  width: 1px;
+  height: 34px;
 
-  margin: 6px 0;
+  margin: 0;
 
   background: #c6b99d;
 }
@@ -1205,9 +1212,19 @@ li {
     width: 100%;
     max-width: 100%;
 
+    grid-template-columns: 1fr;
+    gap: 6px;
+
     padding: 14px 16px;
 
     border-radius: 12px;
+  }
+
+  .event-date-divider {
+    width: 40px;
+    height: 1px;
+
+    margin: 4px auto;
   }
 
   .event-intro {
