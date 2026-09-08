@@ -38,6 +38,7 @@
         <a href="events.html">Events</a>
         <a href="mascots.html">Mascots</a>
         <a href="guide.html">Channel Guide</a>
+        <a href="requeststream.html">Ask a Stream</a>
       </nav>
 
     </header>
@@ -52,14 +53,20 @@
       <section class="intro">
 
         <p>
-          Your selected mascot appears when certain Channel Point rewards are redeemed.<br>
-          兑换特定频道点数奖励时，会显示你选择的Q版山竹。
-        </p>
+          Your mascot can appear when certain Channel Point rewards are redeemed,
+          including <strong>Mascot Summon</strong> and <strong>Mascot Messenger</strong>.
+          In general, followers have access to the Regular mascot, as well as limited-time
+          mascots available during special events. Subscribers have access to all standard 
+          mascots (regular, ponytail, beret,...) and may also have the opportunity to permanently unlock festival mascots 
+          during special events.
+        </p>  
 
-        <p>
-          Subscribers can choose their preferred mascot.<br>
-          订阅者可以选择自己喜欢的Q版山竹。
-        </p>
+         <p>
+          兑换<strong>召唤Q版山竹</strong>或<strong>Q版山竹传话</strong>等频道点数奖励时，
+          你选择的Q版山竹会出现在直播中。通常情况下，关注者可以使用 Regular Q版山竹，以及活
+          动期间限时开放的Q版山竹；订阅者可以使用所有常规Q版山竹(regular, ponytail, beret,...)，
+          并且可以在部分节日活动期间永久解锁限定版山竹。
+         </p>
 
       </section>
 
@@ -80,6 +87,84 @@
 
 
       <!-- =========================
+           Mascot Types
+           ========================= -->
+
+      <section>
+
+        <h2>Standard Mascots / 常规Q版山竹</h2>
+
+        <p>
+          Standard mascots are the regular mascot choices available through the channel.
+          Subscribers can choose their preferred mascot from the standard collection.
+        </p>
+
+        <p>
+          常规Q版山竹是频道中长期提供的基础款式。
+          订阅者可以从常规收藏中选择自己喜欢的Q版山竹。
+        </p>
+
+        <p class="note">
+          The <strong>Regular</strong> mascot is also available to non-subscribers.<br>
+          非订阅用户也可以使用 <strong>Regular</strong> Q版山竹。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           Festival Collection
+           ========================= -->
+
+      <section>
+
+        <h2>Festival Collection / 节日收藏</h2>
+
+        <p>
+          Special festival mascots may appear during limited-time channel events.
+          Each event may have its own unlock conditions.
+        </p>
+
+        <p>
+          节日期间可能会出现特别的限定Q版山竹。
+          不同活动的获得方式可能会有所不同。
+        </p>
+
+        <p>
+          Once a festival mascot is permanently unlocked,
+          it stays in your <strong>Festival Collection</strong>.
+          Festival Collection mascots can be used whenever you currently have an active subscription.
+        </p>
+
+        <p>
+          成功永久解锁节日Q版山竹后，
+          它会一直保留在你的<strong>节日收藏</strong>中。
+          当前处于订阅状态时，即可使用自己已经收藏的节日Q版山竹。
+        </p>
+
+        <p class="note">
+          Permanent collection ownership and current mascot access are separate:
+          your unlocked festival mascots remain in your collection even if your subscription ends,
+          but they become usable again only while you have an active subscription.<br><br>
+
+          永久收藏与当前使用权限是分开的：
+          即使订阅结束，已经解锁的节日Q版山竹也不会从收藏中消失；
+          重新处于订阅状态后即可再次使用。
+        </p>
+
+        <p class="center">
+          <a
+            class="button"
+            href="events.html"
+          >
+            View Current Events / 查看当前活动
+          </a>
+        </p>
+
+      </section>
+
+
+      <!-- =========================
            Mascot Commands
            ========================= -->
 
@@ -88,22 +173,37 @@
         <h2>Choose Your Mascot / 选择Q版山竹</h2>
 
         <p>
-          <code>!setmascot &lt;name&gt;</code><br>
-          Choose your preferred mascot /
-          选择你喜欢的Q版山竹
+          First, check which mascots are currently available to you:<br>
+          首先查看自己目前可以使用哪些Q版山竹：
         </p>
 
         <p>
-          <code>!setmascot random</code><br>
-          Randomly choose from your available mascots /
-          从可用的Q版山竹中随机选择
+          <code>!setmascot</code>
+        </p>
+
+        <p>
+          Choose a specific mascot using its mascot ID:<br>
+          使用Q版山竹的ID来选择指定款式：
+        </p>
+
+        <p>
+          <code>!setmascot &lt;name&gt;</code>
+        </p>
+
+        <p>
+          Or keep mascot selection random:<br>
+          也可以让Q版山竹保持随机选择：
+        </p>
+
+        <p>
+          <code>!setmascot random</code>
         </p>
 
         <p class="note">
-          Mascot selection is a subscriber feature.
-          The “Regular” mascot is available to non-subscribers too.<br>
-          Q版山竹选择功能仅限订阅者使用；
-          非订阅用户也可以使用 “Regular” Q版山竹。
+          Your available mascot list may change during special events.
+          Use <code>!setmascot</code> anytime to check your current options.<br>
+          特殊活动期间，你可以使用的Q版山竹列表可能会发生变化。
+          随时输入 <code>!setmascot</code> 即可查看当前可用的款式。
         </p>
 
       </section>
