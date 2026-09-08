@@ -762,7 +762,7 @@ li {
   display: block;
 
   width: 100%;
-  max-width: 190px;
+  max-width: 120px;
   height: auto;
 
   margin: 0 auto;
@@ -1261,7 +1261,7 @@ li {
   }
 
   .event-mascot-image {
-    max-width: 170px;
+    max-width: 110px;
   }
 
   .event-unlock-grid {
